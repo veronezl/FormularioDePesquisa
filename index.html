@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Formulário de Pesquisa</title>
+</head>
+
+<body>
+  <h1 id="title">Formulário de pesquisa EmpresaX</h1>
+  <p id="description">Obrigado por reservar um tempo para nos ajudar a melhorar a plataforma</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">
+        Nome 
+        <input id="name" type="text" placeholder="Digite seu nome" required />
+      </label>
+      <label id="email-label">
+        Email
+        <input id="email" type="email" placeholder="Digite seu email" required />
+      </label>
+      <label id="number-label">
+        Idade
+        <input id="number" type="number" min="13" max="120" placeholder="idade" />
+      </label>
+    </fieldset>
+    
+    <fieldset>
+      <label for="dropdown">Selecione uma opção:</label>
+      <select id="dropdown">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <p>Gênero:</p>
+      <label>
+        <input type="radio" name="genero" value="masculino" /> Masculino
+      </label>
+      <label>
+        <input type="radio" name="genero" value="feminino" /> Feminino
+      </label>
+      <label>
+        <input type="radio" name="genero" value="neutro" /> Neutro
+      </label>
+    </fieldset>
+    
+    <fieldset>
+      <p>O que você gostaria de ver melhorado? (Múltiplas escolhas)</p>
+      <label>
+        <input type="checkbox" name="checkbox" value="interface" /> Interface
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="front-end-project" /> Front-End Project
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox" value="funcionalidades" /> Funcionalidades
+      </label>
+    </fieldset>
+    
+    <fieldset>
+      <label for="add-comments">Gostaria de dar sugestões no projeto?</label>
+      <textarea id="add-comments" name="add-comments" rows="3" cols="30" placeholder="Escreva aqui suas sugestões..."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" name="Enviar"/>
+  </form>
+</body>
+
+</html>
